@@ -13,3 +13,4 @@ public class SavingAccount implements Account {
         System.out.println(bankName+" -"+balance);
     }
 }
+//It defines behavior for primitive objects in the composition. It represents leaf objects in the composition.

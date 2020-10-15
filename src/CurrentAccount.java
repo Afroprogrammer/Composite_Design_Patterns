@@ -12,3 +12,4 @@ public class CurrentAccount implements Account {
 
     }
 }
+//It defines behavior for primitive objects in the composition. It represents leaf objects in the composition.

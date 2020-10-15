@@ -1,9 +1,10 @@
 public class User {
+    // the client  components that manipulates the objects in the composition through the component interface
     public static void main(String[] args) {
- SavingAccount GN = new SavingAccount("GN Bank", 32_000.00);
- SavingAccount AS = new SavingAccount("Access Bank", 32_000.00);
- SavingAccount AB = new SavingAccount("Absa", 32_000.00);
- SavingAccount ZN = new SavingAccount("Zenith Bank", 32_000.00);
+ SavingAccount GN = new SavingAccount("GN Bank", 40000.00);
+ SavingAccount AS = new SavingAccount("Access Bank", 50000.00);
+ SavingAccount AB = new SavingAccount("Absa", 67000.00);
+ SavingAccount ZN = new SavingAccount("Zenith Bank", 78000.00);
 
 
  BankAccount savingBankAccount = new BankAccount();
@@ -12,9 +13,9 @@ public class User {
  savingBankAccount.addAccount(AB);
  savingBankAccount.addAccount(ZN);
 
-        CurrentAccount LP = new CurrentAccount("LOWER PRA RURAL", 456_00.00);
-        CurrentAccount AP = new CurrentAccount("APEX BANK", 456_00.00);
-        CurrentAccount MP = new CurrentAccount("MPOUNUA", 456_00.00);
+        CurrentAccount LP = new CurrentAccount("LOWER PRA RURAL", 45600.00);
+        CurrentAccount AP = new CurrentAccount("APEX BANK", 45600.00);
+        CurrentAccount MP = new CurrentAccount("MPOUNUA", 45600.00);
 
 
         BankAccount currentBankAccount = new BankAccount();
@@ -23,10 +24,15 @@ public class User {
         currentBankAccount.addAccount(MP);
 
         BankAccount allBankAccounts = new BankAccount();
+
+
         allBankAccounts.addAccount(savingBankAccount);
-        allBankAccounts.showAccountDetails();
-        System.out.println("-------------------------- current account");
-        allBankAccounts.removeAccount(savingBankAccount);
-        allBankAccounts.showAccountDetails();
+        /* comment this code below to see how the composite implement child relations*/
+
+        //  allBankAccounts.showAccountDetails();
+//        System.out.println("-------------------------- current account");
+
+//        allBankAccounts.removeAccount(savingBankAccount);
+//        allBankAccounts.showAccountDetails();
     }
 }

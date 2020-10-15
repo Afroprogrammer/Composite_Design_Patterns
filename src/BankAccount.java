@@ -17,3 +17,4 @@ public class BankAccount implements Account {
         accountList.remove(account);
     }
 }
+//It stores child components and implements child related operations in the component interface.
